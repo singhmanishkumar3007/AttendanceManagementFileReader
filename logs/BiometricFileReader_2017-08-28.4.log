@@ -1,0 +1,312 @@
+2017-08-28 00:48:15,853 DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [com.easybusiness.attendancepersistence.biometricintegration.BiometricIntegrationDao.addBiometricIntegration]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-08-28 00:48:15,856 DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@75e4fe0] for JPA transaction
+2017-08-28 00:48:15,856 DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@79067149]
+2017-08-28 00:48:15,908 INFO  c.e.a.b.BiometricIntegrationDao - in dao for mapping biometric integration 
+2017-08-28 00:48:15,917 DEBUG o.s.d.r.c.s.TransactionalRepositoryProxyPostProcessor$CustomAnnotationTransactionAttributeSource - Adding transactional method 'addBiometricIntegration' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-08-28 00:48:15,919 DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+2017-08-28 00:48:15,919 DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@32a2daf7] for JPA transaction
+2017-08-28 00:48:15,919 DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+2017-08-28 00:48:15,919 DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@32a2daf7] for JPA transaction
+2017-08-28 00:48:15,920 DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+2017-08-28 00:48:15,926 INFO  c.e.a.b.BiometricIntegrationDao - in dao for mapping biometric integration 
+2017-08-28 00:48:15,926 DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@75e4fe0] for JPA transaction
+2017-08-28 00:48:15,926 DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+2017-08-28 00:48:15,926 DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@75e4fe0] for JPA transaction
+2017-08-28 00:48:15,926 DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+2017-08-28 00:48:15,929 INFO  c.e.a.b.BiometricIntegrationDao - in dao for mapping biometric integration 
+2017-08-28 00:48:15,929 DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1bbe9da9] for JPA transaction
+2017-08-28 00:48:15,929 DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+2017-08-28 00:48:15,930 DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1bbe9da9] for JPA transaction
+2017-08-28 00:48:15,930 DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+2017-08-28 00:48:15,940 DEBUG org.hibernate.SQL - 
+    /* load com.easybusiness.attendancepersistence.entity.UserDeviceMap */ select
+        userdevice0_.id as id1_11_5_,
+        userdevice0_.created_by as created_by2_11_5_,
+        userdevice0_.created_on as created_on3_11_5_,
+        userdevice0_.user_device_id as user_device_id4_11_5_,
+        userdevice0_.mod_by as mod_by5_11_5_,
+        userdevice0_.mod_on as mod_on6_11_5_,
+        userdevice0_.user_id as user_id7_11_5_,
+        user1_.user_id as user_id1_10_0_,
+        user1_.altr_email as altr_email2_10_0_,
+        user1_.city as city3_10_0_,
+        user1_.country as country4_10_0_,
+        user1_.dob as dob5_10_0_,
+        user1_.department as department26_10_0_,
+        user1_.designation as designation27_10_0_,
+        user1_.email as email6_10_0_,
+        user1_.end_date as end_date7_10_0_,
+        user1_.father as father8_10_0_,
+        user1_.first_name as first_name9_10_0_,
+        user1_.from_date as from_date10_10_0_,
+        user1_.gender as gender11_10_0_,
+        user1_.is_enable as is_enable12_10_0_,
+        user1_.last_name as last_name13_10_0_,
+        user1_.mobile as mobile14_10_0_,
+        user1_.mod_by as mod_by15_10_0_,
+        user1_.mod_dt as mod_dt16_10_0_,
+        user1_.organization as organization28_10_0_,
+        user1_.passport as passport17_10_0_,
+        user1_.password as password18_10_0_,
+        user1_.perm_addr as perm_addr19_10_0_,
+        user1_.spouse as spouse20_10_0_,
+        user1_.state as state21_10_0_,
+        user1_.type_of_emp as type_of_emp22_10_0_,
+        user1_.user_img as user_img23_10_0_,
+        user1_.user_login_id as user_login_id24_10_0_,
+        user1_.zip as zip25_10_0_,
+        department2_.dept_id as dept_id1_3_1_,
+        department2_.dept_name as dept_name2_3_1_,
+        department2_.org_id as org_id3_3_1_,
+        organizati3_.org_id as org_id1_7_2_,
+        organizati3_.org_location as org_location2_7_2_,
+        organizati3_.org_name as org_name3_7_2_,
+        designatio4_.id as id1_4_3_,
+        designatio4_.desig as desig2_4_3_,
+        organizati5_.org_id as org_id1_7_4_,
+        organizati5_.org_location as org_location2_7_4_,
+        organizati5_.org_name as org_name3_7_4_ 
+    from
+        user_device_map userdevice0_ 
+    left outer join
+        user_details user1_ 
+            on userdevice0_.user_id=user1_.user_id 
+    left outer join
+        department department2_ 
+            on user1_.department=department2_.dept_id 
+    left outer join
+        organization organizati3_ 
+            on department2_.org_id=organizati3_.org_id 
+    left outer join
+        designation designatio4_ 
+            on user1_.designation=designatio4_.id 
+    left outer join
+        organization organizati5_ 
+            on user1_.organization=organizati5_.org_id 
+    where
+        userdevice0_.id=?
+2017-08-28 00:48:15,941 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2017-08-28 00:48:15,950 DEBUG org.hibernate.SQL - 
+    /* load com.easybusiness.attendancepersistence.entity.UserDeviceMap */ select
+        userdevice0_.id as id1_11_5_,
+        userdevice0_.created_by as created_by2_11_5_,
+        userdevice0_.created_on as created_on3_11_5_,
+        userdevice0_.user_device_id as user_device_id4_11_5_,
+        userdevice0_.mod_by as mod_by5_11_5_,
+        userdevice0_.mod_on as mod_on6_11_5_,
+        userdevice0_.user_id as user_id7_11_5_,
+        user1_.user_id as user_id1_10_0_,
+        user1_.altr_email as altr_email2_10_0_,
+        user1_.city as city3_10_0_,
+        user1_.country as country4_10_0_,
+        user1_.dob as dob5_10_0_,
+        user1_.department as department26_10_0_,
+        user1_.designation as designation27_10_0_,
+        user1_.email as email6_10_0_,
+        user1_.end_date as end_date7_10_0_,
+        user1_.father as father8_10_0_,
+        user1_.first_name as first_name9_10_0_,
+        user1_.from_date as from_date10_10_0_,
+        user1_.gender as gender11_10_0_,
+        user1_.is_enable as is_enable12_10_0_,
+        user1_.last_name as last_name13_10_0_,
+        user1_.mobile as mobile14_10_0_,
+        user1_.mod_by as mod_by15_10_0_,
+        user1_.mod_dt as mod_dt16_10_0_,
+        user1_.organization as organization28_10_0_,
+        user1_.passport as passport17_10_0_,
+        user1_.password as password18_10_0_,
+        user1_.perm_addr as perm_addr19_10_0_,
+        user1_.spouse as spouse20_10_0_,
+        user1_.state as state21_10_0_,
+        user1_.type_of_emp as type_of_emp22_10_0_,
+        user1_.user_img as user_img23_10_0_,
+        user1_.user_login_id as user_login_id24_10_0_,
+        user1_.zip as zip25_10_0_,
+        department2_.dept_id as dept_id1_3_1_,
+        department2_.dept_name as dept_name2_3_1_,
+        department2_.org_id as org_id3_3_1_,
+        organizati3_.org_id as org_id1_7_2_,
+        organizati3_.org_location as org_location2_7_2_,
+        organizati3_.org_name as org_name3_7_2_,
+        designatio4_.id as id1_4_3_,
+        designatio4_.desig as desig2_4_3_,
+        organizati5_.org_id as org_id1_7_4_,
+        organizati5_.org_location as org_location2_7_4_,
+        organizati5_.org_name as org_name3_7_4_ 
+    from
+        user_device_map userdevice0_ 
+    left outer join
+        user_details user1_ 
+            on userdevice0_.user_id=user1_.user_id 
+    left outer join
+        department department2_ 
+            on user1_.department=department2_.dept_id 
+    left outer join
+        organization organizati3_ 
+            on department2_.org_id=organizati3_.org_id 
+    left outer join
+        designation designatio4_ 
+            on user1_.designation=designatio4_.id 
+    left outer join
+        organization organizati5_ 
+            on user1_.organization=organizati5_.org_id 
+    where
+        userdevice0_.id=?
+2017-08-28 00:48:15,976 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2017-08-28 00:48:16,004 DEBUG org.hibernate.SQL - 
+    select
+        hibernate_sequence.nextval 
+    from
+        dual
+2017-08-28 00:48:16,005 DEBUG org.hibernate.SQL - 
+    /* load com.easybusiness.attendancepersistence.entity.UserDeviceMap */ select
+        userdevice0_.id as id1_11_5_,
+        userdevice0_.created_by as created_by2_11_5_,
+        userdevice0_.created_on as created_on3_11_5_,
+        userdevice0_.user_device_id as user_device_id4_11_5_,
+        userdevice0_.mod_by as mod_by5_11_5_,
+        userdevice0_.mod_on as mod_on6_11_5_,
+        userdevice0_.user_id as user_id7_11_5_,
+        user1_.user_id as user_id1_10_0_,
+        user1_.altr_email as altr_email2_10_0_,
+        user1_.city as city3_10_0_,
+        user1_.country as country4_10_0_,
+        user1_.dob as dob5_10_0_,
+        user1_.department as department26_10_0_,
+        user1_.designation as designation27_10_0_,
+        user1_.email as email6_10_0_,
+        user1_.end_date as end_date7_10_0_,
+        user1_.father as father8_10_0_,
+        user1_.first_name as first_name9_10_0_,
+        user1_.from_date as from_date10_10_0_,
+        user1_.gender as gender11_10_0_,
+        user1_.is_enable as is_enable12_10_0_,
+        user1_.last_name as last_name13_10_0_,
+        user1_.mobile as mobile14_10_0_,
+        user1_.mod_by as mod_by15_10_0_,
+        user1_.mod_dt as mod_dt16_10_0_,
+        user1_.organization as organization28_10_0_,
+        user1_.passport as passport17_10_0_,
+        user1_.password as password18_10_0_,
+        user1_.perm_addr as perm_addr19_10_0_,
+        user1_.spouse as spouse20_10_0_,
+        user1_.state as state21_10_0_,
+        user1_.type_of_emp as type_of_emp22_10_0_,
+        user1_.user_img as user_img23_10_0_,
+        user1_.user_login_id as user_login_id24_10_0_,
+        user1_.zip as zip25_10_0_,
+        department2_.dept_id as dept_id1_3_1_,
+        department2_.dept_name as dept_name2_3_1_,
+        department2_.org_id as org_id3_3_1_,
+        organizati3_.org_id as org_id1_7_2_,
+        organizati3_.org_location as org_location2_7_2_,
+        organizati3_.org_name as org_name3_7_2_,
+        designatio4_.id as id1_4_3_,
+        designatio4_.desig as desig2_4_3_,
+        organizati5_.org_id as org_id1_7_4_,
+        organizati5_.org_location as org_location2_7_4_,
+        organizati5_.org_name as org_name3_7_4_ 
+    from
+        user_device_map userdevice0_ 
+    left outer join
+        user_details user1_ 
+            on userdevice0_.user_id=user1_.user_id 
+    left outer join
+        department department2_ 
+            on user1_.department=department2_.dept_id 
+    left outer join
+        organization organizati3_ 
+            on department2_.org_id=organizati3_.org_id 
+    left outer join
+        designation designatio4_ 
+            on user1_.designation=designatio4_.id 
+    left outer join
+        organization organizati5_ 
+            on user1_.organization=organizati5_.org_id 
+    where
+        userdevice0_.id=?
+2017-08-28 00:48:16,006 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2017-08-28 00:48:16,023 INFO  c.e.a.b.BiometricIntegrationDao - BiometricIntegration added successfully BiometricIntegration [integrationId=null, userDeviceMap=UserDeviceMap [id=1, user=User [id=7010, userName=secured, firstName=Secured, fromDate=null, lastName=User, password=123, gender=male, dateOfBirth=1989-10-23, email=secured@sls.com, alternateEmail=secured@sls.com, mobile=8723126745, endDate=null, organization=Organization [id=1, orgName=SLS, orgLocation=Kolkata], department=Department [id=1, organization=Organization [id=1, orgName=SLS, orgLocation=Kolkata], deptName=IT], designation=Designation [id=5, desig=LEAD], typeOfEmployment=null, isEnabled=1, userImg=null, modifiedBy=null, modifiedOn=null, permAddr=KaliGhat, state=West Bengal, city=Kolkata, country=India, zip=700102, fatherName=A K Singh, spouseName=S Singh, passport=null], deviceId=1111, modifiedBy=null, modifiedOn=null, createdBy=null, createdOn=null], userDeviceLocation=null, inDate=2017-08-16, inTime=2017-08-16 15:35:05.0, outTime=2017-08-16 19:00:10.0, modifiedBy=null, modifiedOn=null, createdBy=null, createdOn=null]
+2017-08-28 00:48:16,023 INFO  c.e.a.b.BiometricIntegrationDao - BiometricIntegration added successfully BiometricIntegration [integrationId=null, userDeviceMap=UserDeviceMap [id=1, user=User [id=7010, userName=secured, firstName=Secured, fromDate=null, lastName=User, password=123, gender=male, dateOfBirth=1989-10-23, email=secured@sls.com, alternateEmail=secured@sls.com, mobile=8723126745, endDate=null, organization=Organization [id=1, orgName=SLS, orgLocation=Kolkata], department=Department [id=1, organization=Organization [id=1, orgName=SLS, orgLocation=Kolkata], deptName=IT], designation=Designation [id=5, desig=LEAD], typeOfEmployment=null, isEnabled=1, userImg=null, modifiedBy=null, modifiedOn=null, permAddr=KaliGhat, state=West Bengal, city=Kolkata, country=India, zip=700102, fatherName=A K Singh, spouseName=S Singh, passport=null], deviceId=1111, modifiedBy=null, modifiedOn=null, createdBy=null, createdOn=null], userDeviceLocation=null, inDate=2017-08-16, inTime=2017-08-16 09:26:20.0, outTime=2017-08-16 13:00:00.0, modifiedBy=null, modifiedOn=null, createdBy=null, createdOn=null]
+2017-08-28 00:48:16,023 DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2017-08-28 00:48:16,023 DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2017-08-28 00:48:16,023 DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@32a2daf7]
+2017-08-28 00:48:16,023 DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1bbe9da9]
+2017-08-28 00:48:16,023 INFO  c.e.a.b.BiometricIntegrationDao - BiometricIntegration added successfully BiometricIntegration [integrationId=null, userDeviceMap=UserDeviceMap [id=1, user=User [id=7010, userName=secured, firstName=Secured, fromDate=null, lastName=User, password=123, gender=male, dateOfBirth=1989-10-23, email=secured@sls.com, alternateEmail=secured@sls.com, mobile=8723126745, endDate=null, organization=Organization [id=1, orgName=SLS, orgLocation=Kolkata], department=Department [id=1, organization=Organization [id=1, orgName=SLS, orgLocation=Kolkata], deptName=IT], designation=Designation [id=5, desig=LEAD], typeOfEmployment=null, isEnabled=1, userImg=null, modifiedBy=null, modifiedOn=null, permAddr=KaliGhat, state=West Bengal, city=Kolkata, country=India, zip=700102, fatherName=A K Singh, spouseName=S Singh, passport=null], deviceId=1111, modifiedBy=null, modifiedOn=null, createdBy=null, createdOn=null], userDeviceLocation=null, inDate=2017-08-16, inTime=2017-08-16 14:05:00.0, outTime=2017-08-16 15:08:00.0, modifiedBy=null, modifiedOn=null, createdBy=null, createdOn=null]
+2017-08-28 00:48:16,024 DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2017-08-28 00:48:16,024 DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@75e4fe0]
+2017-08-28 00:48:16,045 DEBUG org.hibernate.SQL - 
+    /* insert com.easybusiness.attendancepersistence.entity.BiometricIntegration
+        */ insert 
+        into
+            biometric_integration
+            (created_by, created_on, in_date, in_time, mod_by, mod_on, out_time, user_device_location, user_device_id, device_id) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2017-08-28 00:48:16,046 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [null]
+2017-08-28 00:48:16,047 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [DATE] - [null]
+2017-08-28 00:48:16,047 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DATE] - [2017-08-16]
+2017-08-28 00:48:16,049 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2017-08-16 15:35:05.0]
+2017-08-28 00:48:16,049 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+2017-08-28 00:48:16,049 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [DATE] - [null]
+2017-08-28 00:48:16,049 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [2017-08-16 19:00:10.0]
+2017-08-28 00:48:16,049 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [null]
+2017-08-28 00:48:16,049 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [9] as [BIGINT] - [1]
+2017-08-28 00:48:16,049 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [10] as [BIGINT] - [10640]
+2017-08-28 00:48:16,051 DEBUG org.hibernate.SQL - 
+    /* insert com.easybusiness.attendancepersistence.entity.BiometricIntegration
+        */ insert 
+        into
+            biometric_integration
+            (created_by, created_on, in_date, in_time, mod_by, mod_on, out_time, user_device_location, user_device_id, device_id) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2017-08-28 00:48:16,051 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [null]
+2017-08-28 00:48:16,051 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [DATE] - [null]
+2017-08-28 00:48:16,052 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DATE] - [2017-08-16]
+2017-08-28 00:48:16,052 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2017-08-16 09:26:20.0]
+2017-08-28 00:48:16,052 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+2017-08-28 00:48:16,052 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [DATE] - [null]
+2017-08-28 00:48:16,052 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [2017-08-16 13:00:00.0]
+2017-08-28 00:48:16,052 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [null]
+2017-08-28 00:48:16,052 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [9] as [BIGINT] - [1]
+2017-08-28 00:48:16,052 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [10] as [BIGINT] - [10641]
+2017-08-28 00:48:16,053 DEBUG org.hibernate.SQL - 
+    /* insert com.easybusiness.attendancepersistence.entity.BiometricIntegration
+        */ insert 
+        into
+            biometric_integration
+            (created_by, created_on, in_date, in_time, mod_by, mod_on, out_time, user_device_location, user_device_id, device_id) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2017-08-28 00:48:16,054 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [null]
+2017-08-28 00:48:16,054 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [DATE] - [null]
+2017-08-28 00:48:16,054 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DATE] - [2017-08-16]
+2017-08-28 00:48:16,054 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2017-08-16 14:05:00.0]
+2017-08-28 00:48:16,054 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+2017-08-28 00:48:16,054 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [DATE] - [null]
+2017-08-28 00:48:16,056 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [2017-08-16 15:08:00.0]
+2017-08-28 00:48:16,056 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [null]
+2017-08-28 00:48:16,056 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [9] as [BIGINT] - [1]
+2017-08-28 00:48:16,056 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [10] as [BIGINT] - [10642]
+2017-08-28 00:48:16,073 DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@32a2daf7] after transaction
+2017-08-28 00:48:16,073 DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2017-08-28 00:48:16,073 DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@75e4fe0] after transaction
+2017-08-28 00:48:16,073 DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2017-08-28 00:48:16,073 INFO  c.e.a.processor.AttendanceProcessor - biometric integration data successfully inserted for AttendanceDeviceData [userDeviceId=1111, attendanceDate=16-08-2017, inTime=15:35:05, outTime=19:00:10]
+2017-08-28 00:48:16,074 INFO  attendanceReaderRoute - processing done
+2017-08-28 00:48:16,073 DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1bbe9da9] after transaction
+2017-08-28 00:48:16,076 DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2017-08-28 00:48:16,076 INFO  c.e.a.processor.AttendanceProcessor - biometric integration data successfully inserted for AttendanceDeviceData [userDeviceId=1111, attendanceDate=16-08-2017, inTime=9:26:20, outTime=13:00:00]
+2017-08-28 00:48:16,076 INFO  attendanceReaderRoute - processing done
+2017-08-28 00:48:16,073 INFO  c.e.a.processor.AttendanceProcessor - biometric integration data successfully inserted for AttendanceDeviceData [userDeviceId=1111, attendanceDate=16-08-2017, inTime=14:05:00, outTime=15:08:00]
+2017-08-28 00:48:16,076 INFO  attendanceReaderRoute - processing done
+2017-08-28 00:48:16,586 INFO  o.a.c.impl.DefaultShutdownStrategy - Starting to graceful shutdown 1 routes (timeout 10 seconds)
+2017-08-28 00:48:16,588 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 10 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-28 00:48:17,588 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 9 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-28 00:48:18,604 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 8 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-28 00:48:19,604 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 7 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-28 00:48:20,605 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 6 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-28 00:48:21,606 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 5 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-28 00:48:22,607 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 4 seconds. Inflights per route: [attendanceReaderRoute = 2]

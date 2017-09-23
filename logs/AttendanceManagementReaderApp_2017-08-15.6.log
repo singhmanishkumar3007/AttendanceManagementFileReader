@@ -1,0 +1,408 @@
+2017-08-15 22:56:07,777 DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2017-08-15 22:56:07,777 DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2017-08-15 22:56:07,777 DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1121d029]
+2017-08-15 22:56:07,777 DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@3532a7b8]
+2017-08-15 22:56:07,792 DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [ProxyConnection[PooledConnection[oracle.jdbc.driver.T4CConnection@38eb0f4d]]]
+2017-08-15 22:56:07,792 DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@3532a7b8] after transaction
+2017-08-15 22:56:07,792 DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2017-08-15 22:56:07,792 DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [ProxyConnection[PooledConnection[oracle.jdbc.driver.T4CConnection@15b642b9]]]
+2017-08-15 22:56:07,792 DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1121d029] after transaction
+2017-08-15 22:56:07,792 DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2017-08-15 22:56:07,792 DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [com.easybusiness.attendancepersistence.userdeviceeffort.UserDeviceEffortDao.addUserDeviceEffort]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-08-15 22:56:07,792 DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@49c332ff] for JPA transaction
+2017-08-15 22:56:07,792 DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2c4ba5f3]
+2017-08-15 22:56:07,792 DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [com.easybusiness.attendancepersistence.userdeviceeffort.UserDeviceEffortDao.addUserDeviceEffort]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-08-15 22:56:07,792 DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@24661f89] for JPA transaction
+2017-08-15 22:56:07,792 DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@376469bf]
+2017-08-15 22:56:07,792 INFO  c.e.a.u.UserDeviceEffortDao - in dao for mapping user device effort
+2017-08-15 22:56:07,792 INFO  c.e.a.u.UserDeviceEffortDao - in dao for mapping user device effort
+2017-08-15 22:56:07,808 DEBUG org.hibernate.SQL - 
+    /* select
+        generatedAlias0 
+    from
+        UserDeviceEffort as generatedAlias0 
+    left join
+        generatedAlias0.user as generatedAlias1 
+    where
+        (
+            generatedAlias1=:param0 
+        ) 
+        and (
+            generatedAlias0.effortDate=:param1 
+        ) */ select
+            userdevice0_.effort_id as effort_id1_6_,
+            userdevice0_.activity_id as activity_id10_6_,
+            userdevice0_.actual_effort as actual_effort2_6_,
+            userdevice0_.effort_date as effort_date3_6_,
+            userdevice0_.mod_by as mod_by4_6_,
+            userdevice0_.mod_on as mod_on5_6_,
+            userdevice0_.task_id as task_id11_6_,
+            userdevice0_.time_in_campus as time_in_campus6_6_,
+            userdevice0_.time_in_floor as time_in_floor7_6_,
+            userdevice0_.time_outside_floor as time_outside_floor8_6_,
+            userdevice0_.total_effort as total_effort9_6_,
+            userdevice0_.user_id as user_id12_6_ 
+        from
+            user_effort_details userdevice0_ 
+        left outer join
+            user_details user1_ 
+                on userdevice0_.user_id=user1_.user_id 
+        where
+            user1_.user_id=? 
+            and userdevice0_.effort_date=?
+2017-08-15 22:56:07,808 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [7010]
+2017-08-15 22:56:07,808 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [DATE] - [2017-08-13]
+2017-08-15 22:56:07,808 DEBUG org.hibernate.SQL - 
+    select
+        user0_.user_id as user_id1_5_0_,
+        user0_.altr_email as altr_email2_5_0_,
+        user0_.city as city3_5_0_,
+        user0_.country as country4_5_0_,
+        user0_.dob as dob5_5_0_,
+        user0_.department as department26_5_0_,
+        user0_.designation as designation27_5_0_,
+        user0_.email as email6_5_0_,
+        user0_.end_date as end_date7_5_0_,
+        user0_.father as father8_5_0_,
+        user0_.first_name as first_name9_5_0_,
+        user0_.from_date as from_date10_5_0_,
+        user0_.gender as gender11_5_0_,
+        user0_.is_enable as is_enable12_5_0_,
+        user0_.last_name as last_name13_5_0_,
+        user0_.mobile as mobile14_5_0_,
+        user0_.mod_by as mod_by15_5_0_,
+        user0_.mod_dt as mod_dt16_5_0_,
+        user0_.organization as organization28_5_0_,
+        user0_.passport as passport17_5_0_,
+        user0_.password as password18_5_0_,
+        user0_.perm_addr as perm_addr19_5_0_,
+        user0_.spouse as spouse20_5_0_,
+        user0_.state as state21_5_0_,
+        user0_.type_of_emp as type_of_emp22_5_0_,
+        user0_.user_img as user_img23_5_0_,
+        user0_.user_login_id as user_login_id24_5_0_,
+        user0_.zip as zip25_5_0_,
+        department1_.dept_id as dept_id1_1_1_,
+        department1_.dept_name as dept_name2_1_1_,
+        department1_.org_id as org_id3_1_1_,
+        organizati2_.org_id as org_id1_3_2_,
+        organizati2_.org_location as org_location2_3_2_,
+        organizati2_.org_name as org_name3_3_2_,
+        designatio3_.id as id1_2_3_,
+        designatio3_.desig as desig2_2_3_,
+        organizati4_.org_id as org_id1_3_4_,
+        organizati4_.org_location as org_location2_3_4_,
+        organizati4_.org_name as org_name3_3_4_ 
+    from
+        user_details user0_ 
+    left outer join
+        department department1_ 
+            on user0_.department=department1_.dept_id 
+    left outer join
+        organization organizati2_ 
+            on department1_.org_id=organizati2_.org_id 
+    left outer join
+        designation designatio3_ 
+            on user0_.designation=designatio3_.id 
+    left outer join
+        organization organizati4_ 
+            on user0_.organization=organizati4_.org_id 
+    where
+        user0_.user_id=?
+2017-08-15 22:56:07,808 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [7010]
+2017-08-15 22:56:07,808 INFO  c.e.a.u.UserDeviceEffortDao - size is 1
+2017-08-15 22:56:07,824 DEBUG org.hibernate.SQL - 
+    /* select
+        generatedAlias0 
+    from
+        UserDeviceEffort as generatedAlias0 
+    left join
+        generatedAlias0.user as generatedAlias1 
+    where
+        (
+            generatedAlias1=:param0 
+        ) 
+        and (
+            generatedAlias0.effortDate=:param1 
+        ) */ select
+            userdevice0_.effort_id as effort_id1_6_,
+            userdevice0_.activity_id as activity_id10_6_,
+            userdevice0_.actual_effort as actual_effort2_6_,
+            userdevice0_.effort_date as effort_date3_6_,
+            userdevice0_.mod_by as mod_by4_6_,
+            userdevice0_.mod_on as mod_on5_6_,
+            userdevice0_.task_id as task_id11_6_,
+            userdevice0_.time_in_campus as time_in_campus6_6_,
+            userdevice0_.time_in_floor as time_in_floor7_6_,
+            userdevice0_.time_outside_floor as time_outside_floor8_6_,
+            userdevice0_.total_effort as total_effort9_6_,
+            userdevice0_.user_id as user_id12_6_ 
+        from
+            user_effort_details userdevice0_ 
+        left outer join
+            user_details user1_ 
+                on userdevice0_.user_id=user1_.user_id 
+        where
+            user1_.user_id=? 
+            and userdevice0_.effort_date=?
+2017-08-15 22:56:07,824 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [7010]
+2017-08-15 22:56:07,824 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [DATE] - [2017-08-13]
+2017-08-15 22:56:07,824 DEBUG org.hibernate.SQL - 
+    select
+        user0_.user_id as user_id1_5_0_,
+        user0_.altr_email as altr_email2_5_0_,
+        user0_.city as city3_5_0_,
+        user0_.country as country4_5_0_,
+        user0_.dob as dob5_5_0_,
+        user0_.department as department26_5_0_,
+        user0_.designation as designation27_5_0_,
+        user0_.email as email6_5_0_,
+        user0_.end_date as end_date7_5_0_,
+        user0_.father as father8_5_0_,
+        user0_.first_name as first_name9_5_0_,
+        user0_.from_date as from_date10_5_0_,
+        user0_.gender as gender11_5_0_,
+        user0_.is_enable as is_enable12_5_0_,
+        user0_.last_name as last_name13_5_0_,
+        user0_.mobile as mobile14_5_0_,
+        user0_.mod_by as mod_by15_5_0_,
+        user0_.mod_dt as mod_dt16_5_0_,
+        user0_.organization as organization28_5_0_,
+        user0_.passport as passport17_5_0_,
+        user0_.password as password18_5_0_,
+        user0_.perm_addr as perm_addr19_5_0_,
+        user0_.spouse as spouse20_5_0_,
+        user0_.state as state21_5_0_,
+        user0_.type_of_emp as type_of_emp22_5_0_,
+        user0_.user_img as user_img23_5_0_,
+        user0_.user_login_id as user_login_id24_5_0_,
+        user0_.zip as zip25_5_0_,
+        department1_.dept_id as dept_id1_1_1_,
+        department1_.dept_name as dept_name2_1_1_,
+        department1_.org_id as org_id3_1_1_,
+        organizati2_.org_id as org_id1_3_2_,
+        organizati2_.org_location as org_location2_3_2_,
+        organizati2_.org_name as org_name3_3_2_,
+        designatio3_.id as id1_2_3_,
+        designatio3_.desig as desig2_2_3_,
+        organizati4_.org_id as org_id1_3_4_,
+        organizati4_.org_location as org_location2_3_4_,
+        organizati4_.org_name as org_name3_3_4_ 
+    from
+        user_details user0_ 
+    left outer join
+        department department1_ 
+            on user0_.department=department1_.dept_id 
+    left outer join
+        organization organizati2_ 
+            on department1_.org_id=organizati2_.org_id 
+    left outer join
+        designation designatio3_ 
+            on user0_.designation=designatio3_.id 
+    left outer join
+        organization organizati4_ 
+            on user0_.organization=organizati4_.org_id 
+    where
+        user0_.user_id=?
+2017-08-15 22:56:07,824 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [7010]
+2017-08-15 22:56:07,824 DEBUG org.hibernate.SQL - 
+    /* select
+        generatedAlias0 
+    from
+        UserDeviceEffort as generatedAlias0 
+    left join
+        generatedAlias0.user as generatedAlias1 
+    where
+        (
+            generatedAlias1=:param0 
+        ) 
+        and (
+            generatedAlias0.effortDate=:param1 
+        ) */ select
+            userdevice0_.effort_id as effort_id1_6_,
+            userdevice0_.activity_id as activity_id10_6_,
+            userdevice0_.actual_effort as actual_effort2_6_,
+            userdevice0_.effort_date as effort_date3_6_,
+            userdevice0_.mod_by as mod_by4_6_,
+            userdevice0_.mod_on as mod_on5_6_,
+            userdevice0_.task_id as task_id11_6_,
+            userdevice0_.time_in_campus as time_in_campus6_6_,
+            userdevice0_.time_in_floor as time_in_floor7_6_,
+            userdevice0_.time_outside_floor as time_outside_floor8_6_,
+            userdevice0_.total_effort as total_effort9_6_,
+            userdevice0_.user_id as user_id12_6_ 
+        from
+            user_effort_details userdevice0_ 
+        left outer join
+            user_details user1_ 
+                on userdevice0_.user_id=user1_.user_id 
+        where
+            user1_.user_id=? 
+            and userdevice0_.effort_date=?
+2017-08-15 22:56:07,824 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [7010]
+2017-08-15 22:56:07,824 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [DATE] - [2017-08-13]
+2017-08-15 22:56:07,824 INFO  c.e.a.u.UserDeviceEffortDao - size is 1
+2017-08-15 22:56:07,824 DEBUG org.hibernate.SQL - 
+    /* select
+        generatedAlias0 
+    from
+        UserDeviceEffort as generatedAlias0 
+    left join
+        generatedAlias0.user as generatedAlias1 
+    where
+        (
+            generatedAlias1=:param0 
+        ) 
+        and (
+            generatedAlias0.effortDate=:param1 
+        ) */ select
+            userdevice0_.effort_id as effort_id1_6_,
+            userdevice0_.activity_id as activity_id10_6_,
+            userdevice0_.actual_effort as actual_effort2_6_,
+            userdevice0_.effort_date as effort_date3_6_,
+            userdevice0_.mod_by as mod_by4_6_,
+            userdevice0_.mod_on as mod_on5_6_,
+            userdevice0_.task_id as task_id11_6_,
+            userdevice0_.time_in_campus as time_in_campus6_6_,
+            userdevice0_.time_in_floor as time_in_floor7_6_,
+            userdevice0_.time_outside_floor as time_outside_floor8_6_,
+            userdevice0_.total_effort as total_effort9_6_,
+            userdevice0_.user_id as user_id12_6_ 
+        from
+            user_effort_details userdevice0_ 
+        left outer join
+            user_details user1_ 
+                on userdevice0_.user_id=user1_.user_id 
+        where
+            user1_.user_id=? 
+            and userdevice0_.effort_date=?
+2017-08-15 22:56:07,824 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [7010]
+2017-08-15 22:56:07,824 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [DATE] - [2017-08-13]
+2017-08-15 22:56:07,824 DEBUG org.hibernate.SQL - 
+    /* select
+        generatedAlias0 
+    from
+        UserDeviceEffort as generatedAlias0 
+    left join
+        generatedAlias0.user as generatedAlias1 
+    where
+        (
+            generatedAlias1=:param0 
+        ) 
+        and (
+            generatedAlias0.effortDate=:param1 
+        ) */ select
+            userdevice0_.effort_id as effort_id1_6_,
+            userdevice0_.activity_id as activity_id10_6_,
+            userdevice0_.actual_effort as actual_effort2_6_,
+            userdevice0_.effort_date as effort_date3_6_,
+            userdevice0_.mod_by as mod_by4_6_,
+            userdevice0_.mod_on as mod_on5_6_,
+            userdevice0_.task_id as task_id11_6_,
+            userdevice0_.time_in_campus as time_in_campus6_6_,
+            userdevice0_.time_in_floor as time_in_floor7_6_,
+            userdevice0_.time_outside_floor as time_outside_floor8_6_,
+            userdevice0_.total_effort as total_effort9_6_,
+            userdevice0_.user_id as user_id12_6_ 
+        from
+            user_effort_details userdevice0_ 
+        left outer join
+            user_details user1_ 
+                on userdevice0_.user_id=user1_.user_id 
+        where
+            user1_.user_id=? 
+            and userdevice0_.effort_date=?
+2017-08-15 22:56:07,824 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [7010]
+2017-08-15 22:56:07,824 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [DATE] - [2017-08-13]
+2017-08-15 22:56:07,839 DEBUG o.s.d.r.c.s.TransactionalRepositoryProxyPostProcessor$CustomAnnotationTransactionAttributeSource - Adding transactional method 'addUserDeviceEffort' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-08-15 22:56:07,839 DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@24661f89] for JPA transaction
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@24661f89] for JPA transaction
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+2017-08-15 22:56:07,839 DEBUG org.hibernate.SQL - 
+    /* select
+        generatedAlias0 
+    from
+        UserDeviceEffort as generatedAlias0 
+    left join
+        generatedAlias0.user as generatedAlias1 
+    where
+        (
+            generatedAlias1=:param0 
+        ) 
+        and (
+            generatedAlias0.effortDate=:param1 
+        ) */ select
+            userdevice0_.effort_id as effort_id1_6_,
+            userdevice0_.activity_id as activity_id10_6_,
+            userdevice0_.actual_effort as actual_effort2_6_,
+            userdevice0_.effort_date as effort_date3_6_,
+            userdevice0_.mod_by as mod_by4_6_,
+            userdevice0_.mod_on as mod_on5_6_,
+            userdevice0_.task_id as task_id11_6_,
+            userdevice0_.time_in_campus as time_in_campus6_6_,
+            userdevice0_.time_in_floor as time_in_floor7_6_,
+            userdevice0_.time_outside_floor as time_outside_floor8_6_,
+            userdevice0_.total_effort as total_effort9_6_,
+            userdevice0_.user_id as user_id12_6_ 
+        from
+            user_effort_details userdevice0_ 
+        left outer join
+            user_details user1_ 
+                on userdevice0_.user_id=user1_.user_id 
+        where
+            user1_.user_id=? 
+            and userdevice0_.effort_date=?
+2017-08-15 22:56:07,839 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [7010]
+2017-08-15 22:56:07,839 TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [DATE] - [2017-08-13]
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@49c332ff] for JPA transaction
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@49c332ff] for JPA transaction
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+2017-08-15 22:56:07,839 INFO  c.e.a.u.UserDeviceEffortDao - UserDeviceEffort added successfully UserDeviceEffortDetails [id=8620, activity=null, user=User [id=7010, userName=secured, firstName=Secured, fromDate=null, lastName=User, password=123, gender=male, dateOfBirth=1989-10-23, email=secured@sls.com, alternateEmail=secured@sls.com, mobile=8723126745, endDate=null, organization=Organization [id=1, orgName=SLS, orgLocation=Kolkata], department=Department [id=1, organization=Organization [id=1, orgName=SLS, orgLocation=Kolkata], deptName=IT], designation=Designation [id=5, desig=LEAD], typeOfEmployment=null, isEnabled=1, userImg=null, modifiedBy=null, modifiedOn=null, permAddr=KaliGhat, state=West Bengal, city=Kolkata, country=India, zip=700102, fatherName=A K Singh, spouseName=S Singh, passport=null], task=null, effortDate=2017-08-13, timeInCampus=10.5, timeInFloor=9, timeOutsideFloor=1.5, totalEffort=10.5, actualEffort=null, modifiedBy=null, modifiedOn=null]
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@49c332ff]
+2017-08-15 22:56:07,839 INFO  c.e.a.u.UserDeviceEffortDao - UserDeviceEffort added successfully UserDeviceEffortDetails [id=8620, activity=null, user=User [id=7010, userName=secured, firstName=Secured, fromDate=null, lastName=User, password=123, gender=male, dateOfBirth=1989-10-23, email=secured@sls.com, alternateEmail=secured@sls.com, mobile=8723126745, endDate=null, organization=Organization [id=1, orgName=SLS, orgLocation=Kolkata], department=Department [id=1, organization=Organization [id=1, orgName=SLS, orgLocation=Kolkata], deptName=IT], designation=Designation [id=5, desig=LEAD], typeOfEmployment=null, isEnabled=1, userImg=null, modifiedBy=null, modifiedOn=null, permAddr=KaliGhat, state=West Bengal, city=Kolkata, country=India, zip=700102, fatherName=A K Singh, spouseName=S Singh, passport=null], task=null, effortDate=2017-08-13, timeInCampus=10.5, timeInFloor=9, timeOutsideFloor=1.5, totalEffort=10.5, actualEffort=null, modifiedBy=null, modifiedOn=null]
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@24661f89]
+2017-08-15 22:56:07,839 DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@24661f89] after transaction
+2017-08-15 22:56:07,839 DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2017-08-15 22:56:07,839 INFO  attendanceReaderRoute - processing done
+2017-08-15 22:56:07,855 DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@49c332ff] after transaction
+2017-08-15 22:56:07,855 DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2017-08-15 22:56:07,855 INFO  attendanceReaderRoute - processing done
+2017-08-15 22:56:08,370 INFO  o.a.c.impl.DefaultShutdownStrategy - Starting to graceful shutdown 1 routes (timeout 10 seconds)
+2017-08-15 22:56:08,370 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 10 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-15 22:56:09,384 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 9 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-15 22:56:10,399 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 8 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-15 22:56:11,400 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 7 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-15 22:56:12,405 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 6 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-15 22:56:13,420 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 5 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-15 22:56:14,435 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 4 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-15 22:56:15,450 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 3 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-15 22:56:16,465 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 2 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-15 22:56:17,469 INFO  o.a.c.impl.DefaultShutdownStrategy - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 1 seconds. Inflights per route: [attendanceReaderRoute = 2]
+2017-08-15 22:56:18,385 WARN  o.a.c.impl.DefaultShutdownStrategy - Interrupted while waiting during graceful shutdown, will force shutdown now.
+2017-08-15 22:56:18,385 WARN  o.a.c.impl.DefaultShutdownStrategy - Timeout occurred during graceful shutdown. Forcing the routes to be shutdown now. Notice: some resources may still be running as graceful shutdown did not complete successfully.
+2017-08-15 22:56:18,385 INFO  o.a.c.impl.DefaultShutdownStrategy - Route: attendanceReaderRoute shutdown complete, was consuming from: file://data/attendanceFile?noop=true%40autoCreate%3Dfalse&sendEmptyMessageWhenIdle=true
+2017-08-15 22:56:18,385 INFO  o.a.c.impl.DefaultShutdownStrategy - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-BLRMKU13177757-55575-1502817963727-0-12, fromRouteId=attendanceReaderRoute, routeId=attendanceReaderRoute, nodeId=process1, elapsed=10015, duration=10015]
+2017-08-15 22:56:18,385 INFO  o.a.c.impl.DefaultShutdownStrategy - Graceful shutdown of 1 routes completed in 10 seconds
+2017-08-15 22:56:18,385 INFO  o.a.camel.spring.SpringCamelContext - Route: attendanceReaderRoute is stopped, was consuming from: file://data/attendanceFile?noop=true%40autoCreate%3Dfalse&sendEmptyMessageWhenIdle=true
+2017-08-15 22:56:18,385 INFO  o.a.camel.spring.SpringCamelContext - Apache Camel 2.18.2 (CamelContext: camel-1) is shutting down
+2017-08-15 22:56:18,385 INFO  o.a.c.impl.DefaultShutdownStrategy - Starting to graceful shutdown 3 routes (timeout 300 seconds)
+2017-08-15 22:56:18,385 WARN  o.a.c.impl.DefaultShutdownStrategy - Timeout occurred during graceful shutdown. Forcing the routes to be shutdown now. Notice: some resources may still be running as graceful shutdown did not complete successfully.
+2017-08-15 22:56:18,385 INFO  o.a.c.impl.DefaultShutdownStrategy - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-BLRMKU13177757-55575-1502817963727-0-12, fromRouteId=attendanceReaderRoute, routeId=attendanceReaderRoute, nodeId=process1, elapsed=10015, duration=10015]
+2017-08-15 22:56:18,385 INFO  o.a.c.c.quartz2.QuartzEndpoint - Pausing trigger jmlAutomGroup.timerKey
+2017-08-15 22:56:18,385 INFO  o.a.c.impl.DefaultShutdownStrategy - Graceful shutdown of 3 routes completed in 0 seconds
+2017-08-15 22:56:18,416 INFO  o.a.c.c.quartz2.QuartzEndpoint - Deleting job jmlAutomGroup.timerKey
+2017-08-15 22:56:18,416 INFO  o.a.c.c.quartz2.QuartzComponent - Shutting down scheduler. (will wait for all jobs to complete first.)
+2017-08-15 22:56:18,416 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler-camel-1_$_NON_CLUSTERED shutting down.
+2017-08-15 22:56:18,416 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler-camel-1_$_NON_CLUSTERED paused.
+2017-08-15 22:56:18,744 INFO  org.quartz.core.QuartzScheduler - Scheduler unregistered from name 'quartz:type=QuartzScheduler,name=DefaultQuartzScheduler-camel-1,instance=NON_CLUSTERED' in the local MBeanServer.
+2017-08-15 22:56:18,744 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler-camel-1_$_NON_CLUSTERED shutdown complete.
+2017-08-15 22:56:18,744 WARN  o.a.c.i.DefaultInflightRepository - Shutting down while there are still 1 inflight exchanges.
+2017-08-15 22:56:18,744 INFO  o.a.camel.spring.SpringCamelContext - Apache Camel 2.18.2 (CamelContext: camel-1) uptime 13.984 seconds
+2017-08-15 22:56:18,744 INFO  o.a.camel.spring.SpringCamelContext - Apache Camel 2.18.2 (CamelContext: camel-1) is shutdown in 0.359 seconds
